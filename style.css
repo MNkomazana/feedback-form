@@ -1,0 +1,157 @@
+:root{
+    --primaryColor:#3a4750;
+    --lite-bg:#e8e2db;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 16px;
+    font-family:'Nunito', Arial,Helvetica;
+    color:#000;
+    font-weight:100px;
+}
+.container{
+    min-height:100vh;
+    background-color:var(--primaryColor);
+    display:flex;
+    flex-direction: column;
+    padding-bottom:20px;
+}
+
+/* flex items*/
+.items{
+    width:80%;
+    min-height:180px;
+    background-color:var(--lite-bg);
+    box-shadow: 3px 3px 3px rgba(66, 47, 47, 0.635),
+                1px 1px 1px rgba(70,68,68,0.75);
+    border:1px solid rgb(160,150,150);
+    border-radius:8px;
+    margin:20px auto;
+    padding:10px;
+}
+.questionare{
+    margin-top:6px;
+    padding:6px;
+}
+.heading{
+    border-right:10px solid #7971ea;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.heading .branding{
+    border-bottom: 0.5px solid #5d57b4cc;
+}
+.sub{
+   height:200px;
+   max-height:210px;
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+}
+.sub input[type="text"],
+ .sub input[type="email"]{
+    max-width:260px;
+    height:2em;
+    margin-top:8px;
+    padding:5px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid var(--primaryColor);
+    outline:none;
+    background-color:var(--lite-bg);
+}
+.sub label{
+    font-weight:bold;
+    color:#000;
+    font-size:1.5em;
+}
+.position .role input{
+    max-width:260px;
+    height:2em;
+    margin-top:5px;
+    padding:5px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid var(--primaryColor);
+    outline:none;
+}
+/* Gender */
+.gender .gen{
+    width:100%;
+    height:100%;
+}
+.gender .gen .rdos{
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gender .gen h3{
+    font-weight:bold;
+    font-size:1.5em;
+    color:#000;
+}
+.gender .rdos input[type="radio"]{
+    margin-left:10px;
+    outline:#000;
+}
+.gender .gen label{
+    font-weight:3px;
+    font-size:16px;
+    margin-top:10px;
+}
+/* Text area for complaints */
+.complaint textarea{
+    padding:10px;
+    background-color:var(--lite-bg);
+    font-family: 'Nunito', Arial,Helvetica;
+    border-radius:4px;
+    outline:none;
+    margin-top:10px;
+}
+/* Branch choice */
+.location select{
+    height:2em;
+    padding:4px;
+    outline:none;
+    background-color:var(--lite-bg);
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    margin-top:10px;
+}
+/* Button */
+.btn{
+    width:80%;
+    margin:auto;
+}
+.btn button{
+    width:100%;
+    max-height:3em;
+    font-size:1.5em;
+    border-radius:20px;
+    border:transparent;
+    padding:5px;
+    background-color:#675fda;
+    color:#fff;
+    font-family:'Nunito', Arial,Helvetica;
+    outline:none;
+}
+.btn button:hover{
+    background-color:#4136dbcc;
+    transition:.75s ease-in-out;
+}
+ /* Media Queries */
+ @media screen and (min-width:600px){
+     .container{
+        display:none;
+     }
+ }
+
