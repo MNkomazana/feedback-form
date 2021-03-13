@@ -33,7 +33,7 @@ body{
     margin:20px auto;
     padding:10px;
 }
-.questionare{
+.f-back{
     margin-top:6px;
     padding:6px;
 }
@@ -151,7 +151,7 @@ body{
  /* Media Queries */
  @media screen and (min-width:600px){
      .container{
-        display:none;
+        display:flex;
      }
  }
 
