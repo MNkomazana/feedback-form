@@ -85,23 +85,17 @@ body{
 /* Gender */
 .gender .gen{
     width:100%;
-    height:100%;
+    height:150px;
 }
 .gender .gen .rdos{
-    height:auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    padding:10px;
+    margin-top:20px;
 }
 .gender .gen h3{
     font-weight:bold;
     font-size:1.5em;
     color:#000;
 }
-/*.gender .rdos input[type="radio"]{
-    margin-left:10px;
-    outline:#000;
-}*/
 .gender .gen label{
     font-weight:3px;
     font-size:16px;
