@@ -98,10 +98,10 @@ body{
     font-size:1.5em;
     color:#000;
 }
-.gender .rdos input[type="radio"]{
+/*.gender .rdos input[type="radio"]{
     margin-left:10px;
     outline:#000;
-}
+}*/
 .gender .gen label{
     font-weight:3px;
     font-size:16px;
@@ -149,9 +149,58 @@ body{
     transition:.75s ease-in-out;
 }
  /* Media Queries */
- @media screen and (min-width:600px){
+ @media screen and (min-width:600px)
+  and (max-width:768px){
+     body{
+         background-color:var(--primaryColor);
+     }
      .container{
         display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height:100vh;
+        width:80%;
+        margin:auto;
      }
+     .heading{
+         width:100%;
+     }
+     .container .items{
+         max-height:250px;
+         width:100%;
+     }
+     .form{
+         width:100%;
+     }
+    .sub input[type="text"],
+    .sub input[type="email"],
+    .sub textarea,.sub select{
+        max-width:100%;
+    }
+     .btn{
+         width:100%;
+     }
+     .btn button{
+         width:100%;
+     }
+ }
+ @media screen and (min-width:769px){
+    body{
+        background-color:var(--primaryColor);
+        min-height:100vh;
+    } 
+    .container{
+         display:flex;
+         flex-direction: row;
+         width:80%;
+         margin:auto;
+     }
+     .logo-brand{
+         max-width:50%;
+     }
+     .logo-brand .heading{
+         min-width:230px;
+     }
+    
  }
 
