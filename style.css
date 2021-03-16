@@ -145,7 +145,6 @@ body{
         width:80%;
         margin:auto;
      }
-     
      .heading{
          width:100%;
      }
@@ -156,8 +155,8 @@ body{
      .form{
          width:100%;
      }
-    .sub input[type="text"],
-    .sub input[type="email"],
+    .sub input[type=text],
+    .sub input[type=email],
     .sub textarea,.sub select{
         max-width:100%;
     }
