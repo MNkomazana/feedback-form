@@ -125,11 +125,13 @@ body{
     background-color:#675fda;
     color:#fff;
     font-family:'Nunito', Arial,Helvetica;
+    font-weight:bold;
+    text-transform: uppercase;
     outline:none;
+    transition:background-color .75s ease-in-out;
 }
 .btn button:hover{
-    background-color:#4136dbcc;
-    transition:.75s ease-in-out;
+    background-color:#4136dbcc;  
 }
  /* Media Queries */
  @media screen and (min-width:600px)
