@@ -36,9 +36,9 @@
                     <div class="gen">
                         <h3>Select your gender.</h3>
                         <div class="rdos">
-                            <input type="radio" name="rdoBtn" id="male">
+                            <input type="radio" name="rdoBtnGroup" id="male" value="Male">
                             <label for="male">Male</label><br>
-                            <input type="radio" name="rdoBtn" id="female"zzzz>
+                            <input type="radio" name="rdoBtnGroup" id="female" value="Female">
                             <label for="female">Female</label> 
                         </div>
                     </div>
@@ -76,17 +76,17 @@
                     <div class="location sub">
                         <label for="bName">Choose branch.</label>
                         <select name="branch" id="bName" required>
-                            <option value="#" class="span"><span>Choose a Branch</span></option>
-                            <option value="Head Office">Head Office,CBD.</option>
-                            <option value="Randburg">Randburg branch</option>
-                            <option value="CT">Capetown office</option>
+                            <option value="" selected="true">Choose a Branch</option>
+                            <option value="headoffice">Head Office,CBD.</option>
+                            <option value="randburg">Randburg branch</option>
+                            <option value="Capetown">Capetown office</option>
                             <option value="Mpumalanga">Mpumalanga office</option>
                         </select>
                     </div>
                 </div>
         
                 <div class="btn">
-                    <button>Submit</button>
+                    <button id="btnSubmit">Submit</button>
                 </div>
 
             </form>
