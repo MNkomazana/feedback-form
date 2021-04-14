@@ -2,6 +2,9 @@
     --primaryColor:#3a4750;
     --lite-bg:#e8e2db;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     margin:0;
